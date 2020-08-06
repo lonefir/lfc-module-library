@@ -11,8 +11,16 @@ body {
   padding: 0;
 }
 
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   font-size: 16px;
+  line-height: 1.4;
+  color: #333;
 }
 
 h1,
@@ -22,7 +30,27 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
+}
+
+p {
+  padding-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: minion-pro, Georgia, serif;
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  padding-bottom: 1.5rem;
+}
+
+h4 {
+  font-family: soleil, Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding-bottom: 1.25rem;
 }
 
 section {
@@ -39,9 +67,6 @@ section {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
-}
-.row .col {
-  background: red;
 }
 .row .col-1-12 {
   width: calc(8.33% - 1.875rem);
@@ -78,6 +103,41 @@ section {
 }
 .row .col-full-width {
   width: 100%;
+}
+
+.hero {
+  background-size: cover;
+  background-image: url("../images/background-image.jpg");
+  position: relative;
+  padding: 7.5rem 0;
+}
+.hero:after {
+  position: absolute;
+  z-index: 10;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+.hero .container {
+  position: relative;
+  z-index: 20;
+}
+.hero__media {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero__content {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */

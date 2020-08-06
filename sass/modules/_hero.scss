@@ -1,0 +1,38 @@
+.hero {
+  background-size: cover;
+  background-image: url('../images/background-image.jpg');
+  position: relative;
+  padding: 7.5rem 0;
+
+  &:after {
+    position: absolute;
+    z-index: 10;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: $overlay-dark;
+  }
+
+  .container {
+    position: relative;
+    z-index: 20;
+  }
+
+  &__media {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__content {
+    color: $text-color-white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
