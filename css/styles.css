@@ -11,4 +11,28 @@ body {
   padding: 0;
 }
 
+body {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.container {
+  width: 70rem;
+  max-width: 94%;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=styles.css.map */
