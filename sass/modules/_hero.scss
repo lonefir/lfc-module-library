@@ -1,21 +1,36 @@
 .hero {
   background-size: cover;
-  background-image: url('../images/background-image.jpg');
   position: relative;
   padding: 7.5rem 0;
 
-  &:after {
-    position: absolute;
-    z-index: 10;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: $overlay-dark;
+  &--has-dark-overlay {
+    &:after {
+      position: absolute;
+      z-index: 10;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: $overlay-dark;
+    }
+  }
+
+  &--centered {
+    text-align: center;
+
+    > .container > .row {
+      justify-content: center;
+    }
+  }
+
+  &--reversed {
+    > .container > .row {
+      flex-direction: row-reverse;
+    }
   }
 
   .container {
@@ -34,5 +49,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  &__btn-block {
+    padding-top: 1.25rem;
   }
 }

@@ -2,9 +2,15 @@
 $color-1: red;
 $color-2: blue;
 $color-3: green;
-$text-color-main: #333;
-$text-color-heading: #666;
+$text-color-main: #666;
+$text-color-heading: #333;
 $text-color-white: #fff;
+$link-color-1: #31bf90;
+$link-color-2: #666;
+$border-color-1: #8c8a8a;
+
+// Gradients
+$gradient-1: linear-gradient(180deg, rgba(248, 239, 206, 1) 0%, rgba(190, 230, 177, 1) 100%);
 
 // Fonts
 $font-stack-1: minion-pro, Georgia, serif;

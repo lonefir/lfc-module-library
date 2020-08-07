@@ -20,7 +20,7 @@ video {
 body {
   font-size: 16px;
   line-height: 1.4;
-  color: #333;
+  color: #666;
 }
 
 h1,
@@ -53,6 +53,10 @@ h4 {
   padding-bottom: 1.25rem;
 }
 
+.text-centered {
+  text-align: center;
+}
+
 section {
   padding: 3rem 0;
 }
@@ -67,6 +71,9 @@ section {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
+}
+.row--justify-content-center {
+  justify-content: center;
 }
 .row .col-1-12 {
   width: calc(8.33% - 1.875rem);
@@ -87,7 +94,7 @@ section {
   width: calc(50% - 1.875rem);
 }
 .row .col-7-12 {
-  width: calc(16.66% - 1.875rem);
+  width: calc(58.33% - 1.875rem);
 }
 .row .col-2-3 {
   width: calc(66.66% - 1.875rem);
@@ -105,13 +112,42 @@ section {
   width: 100%;
 }
 
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn--1 {
+  border: 1px solid #8c8a8a;
+  background: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  font-family: soleil, Helvetica, Arial, sans-serif;
+  color: #31bf90;
+  margin-left: 0.625rem;
+}
+.btn--1:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #f8efce 0%, #bee6b1 100%);
+  left: -0.625rem;
+  bottom: -0.625rem;
+}
+
 .hero {
   background-size: cover;
-  background-image: url("../images/background-image.jpg");
   position: relative;
   padding: 7.5rem 0;
 }
-.hero:after {
+.hero--has-dark-overlay:after {
   position: absolute;
   z-index: 10;
   content: "";
@@ -123,6 +159,15 @@ section {
   top: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.85);
+}
+.hero--centered {
+  text-align: center;
+}
+.hero--centered > .container > .row {
+  justify-content: center;
+}
+.hero--reversed > .container > .row {
+  flex-direction: row-reverse;
 }
 .hero .container {
   position: relative;
@@ -138,6 +183,9 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.hero__btn-block {
+  padding-top: 1.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

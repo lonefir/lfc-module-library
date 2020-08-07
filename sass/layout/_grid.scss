@@ -3,6 +3,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  &--justify-content-center {
+    justify-content: center;
+  }
+
   .col {
     &-1-12 {
       width: calc(8.33% - #{$gutter-width});
@@ -29,7 +33,7 @@
     }
 
     &-7-12 {
-      width: calc(16.66% - #{$gutter-width});
+      width: calc(58.33% - #{$gutter-width});
     }
 
     &-2-3 {
