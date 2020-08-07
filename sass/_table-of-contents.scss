@@ -1,0 +1,27 @@
+.table-of-contents-page {
+  height: 100%;
+
+  body {
+    height: 100%;
+  }
+}
+
+.table-of-contents {
+  background: $background-color-1;
+  height: 100%;
+  color: $text-color-white;
+
+  a {
+    color: $text-color-white;
+  }
+
+  &__module-list {
+    border-top: 1px solid $text-color-white;
+    padding-top: 3rem;
+    font-size: 1.1rem;
+
+    h4 {
+      font-weight: 700;
+    }
+  }
+}

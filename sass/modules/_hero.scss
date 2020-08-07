@@ -15,7 +15,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background: $overlay-dark;
+      background: $overlay-1;
     }
   }
 
@@ -41,7 +41,6 @@
   &__media {
     display: flex;
     justify-content: center;
-    flex-direction: column;
   }
 
   &__content {
@@ -53,5 +52,38 @@
 
   &__btn-block {
     padding-top: 1.25rem;
+  }
+
+  @include mq(desktop-narrow, 'max-width') {  
+    padding: 5rem 0;
+
+    .row > .col {
+      margin-bottom: 2.75rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .col-1-2,
+    .col-2-3 {
+      width: 100%;
+    }
+
+    &--reversed {
+      > .container > .row {
+        flex-direction: column-reverse;
+
+        .col {
+          &:first-of-type {
+            margin-bottom: 0;
+          }
+
+          &:last-of-type {
+            margin-bottom: 2.75rem;
+          }
+        }
+      }
+    }
   }
 }

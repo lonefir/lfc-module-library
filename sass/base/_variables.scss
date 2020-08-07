@@ -8,6 +8,7 @@ $text-color-white: #fff;
 $link-color-1: #31bf90;
 $link-color-2: #666;
 $border-color-1: #8c8a8a;
+$background-color-1: #333;
 
 // Gradients
 $gradient-1: linear-gradient(180deg, rgba(248, 239, 206, 1) 0%, rgba(190, 230, 177, 1) 100%);
@@ -16,11 +17,18 @@ $gradient-1: linear-gradient(180deg, rgba(248, 239, 206, 1) 0%, rgba(190, 230, 1
 $font-stack-1: minion-pro, Georgia, serif;
 $font-stack-2: soleil, Helvetica, Arial, sans-serif;
 
+// Font Sizes
+$font-size-h1: 4.5rem;
+$font-size-h2: 3.938rem;
+$font-size-h3: 2.813rem;
+$font-size-h4: 1.7rem;
+$font-size-p: 1rem;
+
 // Overlays
-$overlay-dark: rgba(0, 0, 0, .85);
+$overlay-1: rgba(0, 0, 0, .85);
 
 // Layout
 $section-padding: 3rem 0;
 $container-width: 70rem; 
-$container-max-width: 94%;
+$container-max-width: 90%;
 $gutter-width: 1.875rem;
