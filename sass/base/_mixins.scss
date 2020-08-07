@@ -57,3 +57,14 @@ $breakpoints: (
   position: absolute;
   width: 1px;
 }
+
+// Keyframes
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+  }
+
+  to   { 
+    opacity: 1; 
+  }
+}
