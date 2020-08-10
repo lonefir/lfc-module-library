@@ -496,6 +496,12 @@ section {
   position: relative;
   padding: 7.5rem 0;
 }
+.hero h1,
+.hero h2,
+.hero h3,
+.hero h4 {
+  color: #fff;
+}
 .hero--has-dark-overlay:after {
   position: absolute;
   z-index: 10;
@@ -582,6 +588,12 @@ section {
 }
 .table-of-contents-page body {
   height: 100%;
+}
+.table-of-contents-page h1,
+.table-of-contents-page h2,
+.table-of-contents-page h3,
+.table-of-contents-page h4 {
+  color: #fff;
 }
 
 .table-of-contents {

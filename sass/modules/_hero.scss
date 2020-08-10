@@ -3,6 +3,13 @@
   position: relative;
   padding: 7.5rem 0;
 
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $text-color-white;
+  }
+
   &--has-dark-overlay {
     &:after {
       position: absolute;
