@@ -1,4 +1,57 @@
 .logo-bar {
+  .slick-dots {
+    bottom: -35px;
+
+    li {
+      margin: 0 1px;
+
+      button {
+        &:before {
+          font-size: .75rem;
+          color: $dot-color-2;
+          opacity: 1;
+          transition: all .3s ease;
+        }
+
+        &:hover {
+          &:before {
+            opacity: .7
+          }
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            color: $dot-color-1;
+          }
+        }
+      }
+    }
+  }
+
+  &__prev-arrow,
+  &__next-arrow {
+    position: absolute;
+    display: block;
+    color: $text-color-main;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 40%;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__prev-arrow {
+    left: -2rem;
+  }
+
+  &__next-arrow {
+    right: -2rem;
+  }
+
   &__intro {
     text-align: center;
     width: 75%;
@@ -31,5 +84,35 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+
+  @include mq(desktop-narrow, 'max-width') {
+    &__prev-arrow {
+      left: -1.5rem;
+    }
+
+    &__next-arrow {
+      right: -1.5rem;
+    }
+  }
+
+  @include mq(ipad, 'max-width') {
+    &__prev-arrow {
+      left: -1rem;
+    }
+
+    &__next-arrow {
+      right: -1rem;
+    }
+  }
+
+  @include mq(mobile-landscape, 'max-width') {
+    &__prev-arrow {
+      left: -.75rem;
+    }
+
+    &__next-arrow {
+      right: -.75rem;
+    }
   }
 }

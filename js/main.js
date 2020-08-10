@@ -5,8 +5,8 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 5,
-    prevArrow: '<i class="fas fa-caret-left"></i>',
-    nextArrow: '<i class="fas fa-caret-right"></i>',
+    prevArrow: '<i class="logo-bar__prev-arrow fas fa-caret-left"></i>',
+    nextArrow: '<i class="logo-bar__next-arrow fas fa-caret-right"></i>',
     responsive: [
     {
       breakpoint: 1024,
