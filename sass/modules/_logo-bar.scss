@@ -2,7 +2,7 @@
   &__intro {
     text-align: center;
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
 
     &:after {
       content: '';
@@ -15,5 +15,21 @@
       max-width: 75%;
       margin: 0 auto;
     }
+  }
+
+  &__slide {
+    display: flex !important;
+    height: 180px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  &__slide-inner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }

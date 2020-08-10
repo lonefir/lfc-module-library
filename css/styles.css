@@ -569,7 +569,7 @@ section {
 .logo-bar__intro {
   text-align: center;
   width: 75%;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
 }
 .logo-bar__intro:after {
   content: "";
@@ -581,6 +581,20 @@ section {
   width: 540px;
   max-width: 75%;
   margin: 0 auto;
+}
+.logo-bar__slide {
+  display: flex !important;
+  height: 180px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.logo-bar__slide-inner {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .table-of-contents-page {
