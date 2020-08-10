@@ -84,7 +84,7 @@ h3 {
 
 h4 {
   font-family: $font-stack-2;
-  font-size: 1.7rem;
+  font-size: $font-size-h4;
   font-weight: 300;
   line-height: 1.25;
   padding-bottom: 1.25rem;
@@ -100,5 +100,26 @@ h4 {
 
   @include mq(tablet, 'max-width') {
     font-size: calc(.7 * #{$font-size-h4});
+  }
+}
+
+h5 {
+  font-family: $font-stack-2;
+  font-size: $font-size-h5;
+  font-weight: 300;
+  line-height: 1.25;
+  padding-bottom: 1.25rem;
+  color: $text-color-main;
+
+  @include mq(desktop-narrow, 'max-width') {
+    font-size: calc(.9 * #{$font-size-h5});
+  }
+
+  @include mq(ipad, 'max-width') {
+    font-size: calc(.8 * #{$font-size-h5});
+  }
+
+  @include mq(tablet, 'max-width') {
+    font-size: calc(.7 * #{$font-size-h5});
   }
 }

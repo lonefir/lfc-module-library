@@ -151,6 +151,30 @@ h4 {
   }
 }
 
+h5 {
+  font-family: soleil, Helvetica, Arial, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 300;
+  line-height: 1.25;
+  padding-bottom: 1.25rem;
+  color: #666;
+}
+@media screen and (max-width: 899px) {
+  h5 {
+    font-size: calc(.9 * 1.375rem);
+  }
+}
+@media screen and (max-width: 766px) {
+  h5 {
+    font-size: calc(.8 * 1.375rem);
+  }
+}
+@media screen and (max-width: 639px) {
+  h5 {
+    font-size: calc(.7 * 1.375rem);
+  }
+}
+
 .text-centered {
   text-align: center;
 }
@@ -568,6 +592,12 @@ section {
   .hero--reversed > .container > .row .col:last-of-type {
     margin-bottom: 2.75rem;
   }
+}
+
+.lr-content__intro {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto 3rem;
 }
 
 .logo-bar .slick-dots {
