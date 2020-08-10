@@ -1,7 +1,61 @@
 .lr-content {
   &__intro {
     text-align: center;
-    width: 75%;
-    margin: 0 auto 3rem;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+}
+
+.lr-content-block {
+  padding-bottom: 4rem;
+
+  &--image-left {
+    .lr-content-block__row {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__intro {
+    padding-bottom: 1.25rem;
+
+    &:after {
+      display: block;
+      content: url('../images/divider.png');
+
+    }
+  }
+
+  &__heading {
+    padding-bottom: .35rem;
+  }
+
+  &__subheading {
+    padding-bottom: .6rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    color: $text-color-main;
+    line-height: 1.9;
+
+    p {
+      line-height: 1.9;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+    p,
+    ul,
+    ol {
+      font-weight: 300;
+      color: $text-color-main;
+    }
+  }  
+
+  &__btn-block {
+    padding-top: 3rem;
   }
 }

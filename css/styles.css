@@ -596,8 +596,49 @@ section {
 
 .lr-content__intro {
   text-align: center;
-  width: 75%;
-  margin: 0 auto 3rem;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.lr-content-block {
+  padding-bottom: 4rem;
+}
+.lr-content-block--image-left .lr-content-block__row {
+  flex-direction: row-reverse;
+}
+.lr-content-block__intro {
+  padding-bottom: 1.25rem;
+}
+.lr-content-block__intro:after {
+  display: block;
+  content: url("../images/divider.png");
+}
+.lr-content-block__heading {
+  padding-bottom: 0.35rem;
+}
+.lr-content-block__subheading {
+  padding-bottom: 0.6rem;
+}
+.lr-content-block__text {
+  font-weight: 300;
+  color: #666;
+  line-height: 1.9;
+}
+.lr-content-block__text p {
+  line-height: 1.9;
+}
+.lr-content-block__text p:last-of-type {
+  padding-bottom: 0;
+}
+.lr-content-block__text p,
+.lr-content-block__text ul,
+.lr-content-block__text ol {
+  font-weight: 300;
+  color: #666;
+}
+.lr-content-block__btn-block {
+  padding-top: 3rem;
 }
 
 .logo-bar .slick-dots {
@@ -637,7 +678,7 @@ section {
 }
 .logo-bar__intro {
   text-align: center;
-  width: 75%;
+  width: 70%;
   margin: 0 auto 3rem;
 }
 .logo-bar__intro:after {
