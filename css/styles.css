@@ -602,10 +602,7 @@ section {
 }
 
 .lr-content-block {
-  padding-bottom: 4rem;
-}
-.lr-content-block--image-left .lr-content-block__row {
-  flex-direction: row-reverse;
+  margin-bottom: 6.5rem;
 }
 .lr-content-block__intro {
   padding-bottom: 1.25rem;
@@ -639,6 +636,41 @@ section {
 }
 .lr-content-block__btn-block {
   padding-top: 3rem;
+}
+.lr-content-block__image {
+  position: relative;
+}
+.lr-content-block__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 31rem;
+}
+.lr-content-block__image:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #f8efce 0%, #bee6b1 100%);
+  right: -1rem;
+  bottom: -1rem;
+  cursor: pointer;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+}
+.lr-content-block--image-left .lr-content-block__row {
+  flex-direction: row-reverse;
+}
+.lr-content-block--image-left .lr-content-block__image:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #f8efce 0%, #bee6b1 100%);
+  left: -1rem;
+  bottom: -1rem;
+  cursor: pointer;
 }
 
 .logo-bar .slick-dots {
