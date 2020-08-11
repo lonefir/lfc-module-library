@@ -7,7 +7,7 @@
     justify-content: center;
   }
 
-  .col {
+  .col {    
     &-1-12 {
       width: calc(8.33% - #{$gutter-width});
     }

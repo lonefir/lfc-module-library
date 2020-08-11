@@ -611,6 +611,56 @@ section {
   }
 }
 
+.lead-magnet {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 5rem 0;
+}
+.lead-magnet .col {
+  position: relative;
+}
+.lead-magnet__inner {
+  background: #fff;
+  padding: 2rem 2.5rem 3rem 2.5rem;
+  position: relative;
+  z-index: 0;
+  box-shadow: 10px 3px 20px rgba(0, 0, 0, 0.15);
+  overflow: visible;
+}
+.lead-magnet__text {
+  font-weight: 300;
+  color: #666;
+  line-height: 1.8;
+}
+.lead-magnet__text p {
+  line-height: 1.8;
+}
+.lead-magnet__text p:last-of-type {
+  padding-bottom: 0;
+}
+.lead-magnet__text p,
+.lead-magnet__text ul,
+.lead-magnet__text ol {
+  font-weight: 300;
+  color: #666;
+}
+.lead-magnet__media {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+.lead-magnet__media img {
+  object-fit: cover;
+  height: 100%;
+  max-width: none;
+}
+.lead-magnet__btn-block {
+  margin-top: 2.5rem;
+}
+
 .lr-content__intro {
   text-align: center;
   width: 70%;
