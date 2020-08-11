@@ -54,6 +54,21 @@ p {
 p {
   padding-bottom: 1.5rem;
 }
+@media screen and (max-width: 899px) {
+  p {
+    font-size: calc(.95 * 1rem);
+  }
+}
+@media screen and (max-width: 766px) {
+  p {
+    font-size: calc(.9 * 1rem);
+  }
+}
+@media screen and (max-width: 639px) {
+  p {
+    font-size: calc(.875 * 1rem);
+  }
+}
 
 h1 {
   font-family: minion-pro, Georgia, serif;
@@ -267,11 +282,13 @@ section {
 @media screen and (max-width: 766px) {
   .btn--1 {
     padding: 1.2rem 3rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 479px) {
   .btn--1 {
     padding: 1rem 2.4rem;
+    font-size: 0.7rem;
   }
 }
 
