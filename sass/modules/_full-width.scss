@@ -97,5 +97,23 @@
       width: 100%;
       padding: 0;
     }
+
+    &--image-background {
+      padding: 6rem 0;
+      background-size: cover;
+    }
+  }
+
+  @include mq(tablet, 'max-width') {
+    &__image {
+      img {
+        height: 18rem;
+      }
+    }
+
+    &--image-background {
+      padding: 5rem 0;
+      background-size: cover;
+    }
   }
 }

@@ -696,6 +696,19 @@ section {
     width: 100%;
     padding: 0;
   }
+  .full-width--image-background {
+    padding: 6rem 0;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 639px) {
+  .full-width__image img {
+    height: 18rem;
+  }
+  .full-width--image-background {
+    padding: 5rem 0;
+    background-size: cover;
+  }
 }
 
 .lead-magnet {
