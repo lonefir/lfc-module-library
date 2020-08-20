@@ -1,0 +1,135 @@
+.lr-float {
+  overflow: hidden;
+
+  &__intro {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  @include mq(desktop-narrow, 'max-width') {
+    &__intro {
+      width: 100%;
+    }
+  }
+}
+
+.lr-float-block {
+  margin-bottom: 6.5rem;
+
+  &__intro {
+    padding-bottom: 1.25rem;
+
+    &:after {
+      display: block;
+      content: url('../images/divider.png');
+    }
+  }
+
+  &__heading {
+    padding-bottom: .35rem;
+  }
+
+  &__subheading {
+    padding-bottom: .6rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    color: $text-color-main;
+    line-height: 1.9;
+
+    p {
+      line-height: 1.9;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+    p,
+    ul,
+    ol {
+      font-weight: 300;
+      color: $text-color-main;
+    }
+  }  
+
+  &__btn-block {
+    padding-top: 3rem;
+  }
+
+  &__image {
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: -1;
+      height: 31rem;
+      width: 50vw;
+      background: $gradient-1;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      box-shadow: 10px 0 20px rgba(0, 0, 0, .1);
+      right: calc((-1 * #{$gutter-width}) - 1rem);
+    }
+
+    img {
+      object-fit: cover;
+      height: 31rem;
+      width: 50vw;
+      position: absolute;
+    }
+  }
+
+  &--image-left {
+    .lr-float-block__row {
+      flex-direction: row-reverse;
+    }
+
+    .lr-float-block__image {
+      &:before {
+        position: absolute;
+        content: '';
+        z-index: -1;
+        height: 31rem;
+        width: 50vw;
+        background: $gradient-1;
+        margin-top: 1rem;
+        margin-left: -1rem;
+        left: calc(-1 * #{$gutter-width});
+        cursor: pointer;
+        box-shadow: 10px 0 20px rgba(0, 0, 0, .1);
+      }
+
+      img {
+        object-fit: cover;
+        height: 31rem;
+        width: 50vw;
+        position: absolute;
+        left: calc(-1 * #{$gutter-width});
+      }
+    }
+  }
+
+  @include mq(desktop-narrow, 'max-width') {
+    &__row {
+      > .col {
+        &:first-of-type {
+          margin-bottom: 4rem;
+        }
+      }
+
+      .col-1-2 {
+        width: 100%;
+      }
+    }
+
+    &__image {
+      img {
+        max-height: 26rem;
+      }
+    }
+  }
+}
