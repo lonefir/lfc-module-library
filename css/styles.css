@@ -590,11 +590,11 @@ section {
   .hero {
     padding: 5rem 0;
   }
-  .hero .row > .col {
-    margin-bottom: 2.75rem;
+  .hero .row {
+    flex-direction: column-reverse;
   }
-  .hero .row > .col:last-of-type {
-    margin-bottom: 0;
+  .hero .row > .col {
+    margin-bottom: 3rem;
   }
   .hero .col-1-2,
 .hero .col-2-3 {
@@ -605,9 +605,6 @@ section {
   }
   .hero--reversed > .container > .row .col:first-of-type {
     margin-bottom: 0;
-  }
-  .hero--reversed > .container > .row .col:last-of-type {
-    margin-bottom: 2.75rem;
   }
 }
 

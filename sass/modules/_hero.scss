@@ -64,11 +64,11 @@
   @include mq(desktop-narrow, 'max-width') {  
     padding: 5rem 0;
 
-    .row > .col {
-      margin-bottom: 2.75rem;
+    .row {
+      flex-direction: column-reverse;
 
-      &:last-of-type {
-        margin-bottom: 0;
+      > .col {
+        margin-bottom: 3rem;
       }
     }
 
@@ -84,10 +84,6 @@
         .col {
           &:first-of-type {
             margin-bottom: 0;
-          }
-
-          &:last-of-type {
-            margin-bottom: 2.75rem;
           }
         }
       }
