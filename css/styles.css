@@ -606,6 +606,9 @@ section {
   .hero--reversed > .container > .row .col:first-of-type {
     margin-bottom: 0;
   }
+  .hero--centered .row > .col {
+    margin-bottom: 0;
+  }
 }
 
 .full-width {
