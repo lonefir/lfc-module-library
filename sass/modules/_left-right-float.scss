@@ -127,8 +127,30 @@
     }
 
     &__image {
+      &:before {
+
+      }
+
       img {
         max-height: 26rem;
+        height: auto;
+        width: 100%;
+        position: relative;
+        right: auto;
+        left: auto;
+      }
+    }
+
+    &--image-left {
+      .lr-float-block__image {
+        img {
+          max-height: 26rem;
+          height: auto;
+          width: 100%;
+          position: relative;
+          right: auto;
+          left: auto;
+        }
       }
     }
   }

@@ -994,6 +994,19 @@ section {
   }
   .lr-float-block__image img {
     max-height: 26rem;
+    height: auto;
+    width: 100%;
+    position: relative;
+    right: auto;
+    left: auto;
+  }
+  .lr-float-block--image-left .lr-float-block__image img {
+    max-height: 26rem;
+    height: auto;
+    width: 100%;
+    position: relative;
+    right: auto;
+    left: auto;
   }
 }
 
