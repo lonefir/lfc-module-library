@@ -127,8 +127,15 @@
     }
 
     &__image {
-      &:before {
+      position: relative;
 
+      &:before {
+        height: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        left: auto;
+        right: auto;
       }
 
       img {
@@ -143,6 +150,17 @@
 
     &--image-left {
       .lr-float-block__image {
+        position: relative;
+        
+        &:before {
+          height: 100%;
+          width: 100%;
+          margin-top: 1rem;
+          margin-right: 1rem;
+          left: auto;
+          right: auto;
+        }
+
         img {
           max-height: 26rem;
           height: auto;

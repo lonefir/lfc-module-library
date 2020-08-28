@@ -992,6 +992,17 @@ section {
   .lr-float-block__row .col-1-2 {
     width: 100%;
   }
+  .lr-float-block__image {
+    position: relative;
+  }
+  .lr-float-block__image:before {
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    left: auto;
+    right: auto;
+  }
   .lr-float-block__image img {
     max-height: 26rem;
     height: auto;
@@ -999,6 +1010,17 @@ section {
     position: relative;
     right: auto;
     left: auto;
+  }
+  .lr-float-block--image-left .lr-float-block__image {
+    position: relative;
+  }
+  .lr-float-block--image-left .lr-float-block__image:before {
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    left: auto;
+    right: auto;
   }
   .lr-float-block--image-left .lr-float-block__image img {
     max-height: 26rem;
