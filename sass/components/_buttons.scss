@@ -13,7 +13,7 @@
 
 .btn--1 {
   margin-left: .625rem;
-  
+
   span {
     display: inline-block;
     border: 1px solid $border-color-1;
@@ -24,6 +24,11 @@
     padding: 1.5rem 4rem;
     font-family: $font-stack-2;
     color: $link-color-1;
+    transition: all .2s ease;
+
+    &:hover {
+      color: $link-hover-color-1;
+    }
   }
 
   &:before {
@@ -39,12 +44,23 @@
   }
 
   @include mq(ipad, 'max-width') {
-    padding: 1.2rem 3rem;
-    font-size: .8rem;
+    margin-left: .5rem;
+
+    span {
+      padding: 1.2rem 3rem;
+      font-size: .8rem;
+    }
+
+    &:before {
+      left: -0.5rem;
+      bottom: -0.5rem;
+    }
   }
 
   @include mq(mobile-landscape, 'max-width') {
-    padding: 1rem 2.4rem;
-    font-size: .7rem;
+    span {
+      padding: 1rem 2.4rem;
+      font-size: .7rem;
+    }
   }
 }

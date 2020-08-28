@@ -274,6 +274,10 @@ section {
   padding: 1.5rem 4rem;
   font-family: soleil, Helvetica, Arial, sans-serif;
   color: #31bf90;
+  transition: all 0.2s ease;
+}
+.btn--1 span:hover {
+  color: #666;
 }
 .btn--1:before {
   position: absolute;
@@ -288,12 +292,19 @@ section {
 }
 @media screen and (max-width: 766px) {
   .btn--1 {
+    margin-left: 0.5rem;
+  }
+  .btn--1 span {
     padding: 1.2rem 3rem;
     font-size: 0.8rem;
   }
+  .btn--1:before {
+    left: -0.5rem;
+    bottom: -0.5rem;
+  }
 }
 @media screen and (max-width: 479px) {
-  .btn--1 {
+  .btn--1 span {
     padding: 1rem 2.4rem;
     font-size: 0.7rem;
   }
@@ -304,7 +315,6 @@ section {
 }
 .form__field input:not([type=checkbox]),
 .form__field input:not([type=radio]),
-.form__field input:not([type=submit]),
 .form__field textarea {
   width: 100%;
   border: none;
@@ -313,6 +323,7 @@ section {
   font-family: soleil, Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   padding: 1.5rem 1.75rem;
+  border-radius: 0;
 }
 .form__field input {
   height: 4.375rem;
@@ -330,6 +341,41 @@ section {
 }
 .form__row--two-columns .form__field {
   width: calc(50% - 1rem);
+}
+.form input[type=submit].form__submit-btn {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #8c8a8a;
+  background: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  font-family: soleil, Helvetica, Arial, sans-serif;
+  color: #31bf90;
+  transition: all 0.2s ease;
+}
+.form input[type=submit].form__submit-btn:hover {
+  color: #666;
+}
+.form__submit-wrapper {
+  margin-top: 2rem;
+  position: relative;
+  margin-left: 0.625rem;
+}
+.form__submit-wrapper:before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #f8efce 0%, #bee6b1 100%);
+  left: -0.625rem;
+  bottom: -0.625rem;
+  cursor: pointer;
 }
 
 .slick-slider {
@@ -606,6 +652,22 @@ section {
 }
 .bofu__intro {
   padding-bottom: 1rem;
+}
+.bofu__image img {
+  margin: 0 auto;
+}
+@media screen and (max-width: 899px) {
+  .bofu .row {
+    flex-direction: column;
+  }
+  .bofu .row .col-1-3,
+.bofu .row .col-1-2,
+.bofu .row .col-2-3 {
+    width: 100%;
+  }
+  .bofu__image {
+    display: none;
+  }
 }
 
 .hero {
