@@ -15,6 +15,23 @@
     z-index: 20;
   }
 
+  &--centered {
+    text-align: center;
+
+    > .container > .row {
+      justify-content: center;
+    }
+
+    .bofu__form {
+      margin-top: 2rem;
+
+      .form__submit-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
   &--has-dark-overlay {
     &:after {
       position: absolute;

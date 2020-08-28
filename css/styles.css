@@ -342,7 +342,10 @@ section {
 .form__row--two-columns .form__field {
   width: calc(50% - 1rem);
 }
-.form input[type=submit].form__submit-btn {
+.form__row--justify-content-center {
+  justify-content: center;
+}
+.form input[type=submit] {
   position: relative;
   z-index: 2;
   cursor: pointer;
@@ -357,7 +360,7 @@ section {
   color: #31bf90;
   transition: all 0.2s ease;
 }
-.form input[type=submit].form__submit-btn:hover {
+.form input[type=submit]:hover {
   color: #666;
 }
 .form__submit-wrapper {
@@ -376,6 +379,30 @@ section {
   left: -0.625rem;
   bottom: -0.625rem;
   cursor: pointer;
+}
+@media screen and (max-width: 766px) {
+  .form__field input:not([type=checkbox]),
+.form__field input:not([type=radio]),
+.form__field textarea {
+    font-size: 1rem;
+  }
+  .form__submit-wrapper {
+    margin-left: 0.5rem;
+  }
+  .form__submit-wrapper:before {
+    left: -0.5rem;
+    bottom: -0.5rem;
+  }
+  .form input[type=submit] {
+    padding: 1.2rem 3rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .form input[type=submit] {
+    padding: 1rem 2.4rem;
+    font-size: 0.7rem;
+  }
 }
 
 .slick-slider {
@@ -636,6 +663,19 @@ section {
 .bofu .container {
   position: relative;
   z-index: 20;
+}
+.bofu--centered {
+  text-align: center;
+}
+.bofu--centered > .container > .row {
+  justify-content: center;
+}
+.bofu--centered .bofu__form {
+  margin-top: 2rem;
+}
+.bofu--centered .bofu__form .form__submit-wrapper {
+  display: flex;
+  justify-content: center;
 }
 .bofu--has-dark-overlay:after {
   position: absolute;

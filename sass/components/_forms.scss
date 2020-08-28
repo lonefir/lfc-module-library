@@ -36,9 +36,13 @@
         width: calc(50% - #{$form-gutter-width});
       }
     }
+
+    &--justify-content-center {
+      justify-content: center;
+    }
   }
 
-  input[type='submit'].form__submit-btn {
+  input[type='submit'] {
     position: relative;
     z-index: 2;
     cursor: pointer;
@@ -74,6 +78,37 @@
       left: -0.625rem;
       bottom: -0.625rem;
       cursor: pointer;
+    }
+  }
+
+  @include mq(ipad, 'max-width') {
+    &__field {
+      input:not([type='checkbox']),
+      input:not([type='radio']),
+      textarea {
+        font-size: $font-size-p;
+      }
+    }
+
+    &__submit-wrapper {
+      margin-left: .5rem;
+
+      &:before {
+        left: -0.5rem;
+        bottom: -0.5rem;
+      }
+    }
+
+    input[type='submit'] {
+      padding: 1.2rem 3rem;
+      font-size: .8rem;
+    }
+  }
+
+  @include mq(mobile-landscape, 'max-width') {    
+    input[type='submit'] {
+      padding: 1rem 2.4rem;
+      font-size: .7rem;
     }
   }
 }
