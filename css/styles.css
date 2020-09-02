@@ -710,6 +710,10 @@ section {
   }
 }
 
+.columns__intro {
+  text-align: center;
+}
+
 .hero {
   background-size: cover;
   position: relative;
