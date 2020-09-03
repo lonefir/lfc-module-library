@@ -55,12 +55,26 @@
 
   &--has-icons {
     .columns__col-content {
-      margin-left: 3.5rem;
+      margin-left: 3.75rem;
 
       p:last-child {
         margin-bottom: 0;
         padding-bottom: 0;
       }
+    }
+  }
+
+  &--has-icons.columns--has-icons-centered {
+    text-align: center;
+
+    .columns__col-icon {
+      position: relative;
+      left: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .columns__col-content {
+      margin-left: 0;
     }
   }
 

@@ -754,11 +754,22 @@ section {
   top: -0.35rem;
 }
 .columns--has-icons .columns__col-content {
-  margin-left: 3.5rem;
+  margin-left: 3.75rem;
 }
 .columns--has-icons .columns__col-content p:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+.columns--has-icons.columns--has-icons-centered {
+  text-align: center;
+}
+.columns--has-icons.columns--has-icons-centered .columns__col-icon {
+  position: relative;
+  left: auto;
+  margin-bottom: 1.5rem;
+}
+.columns--has-icons.columns--has-icons-centered .columns__col-content {
+  margin-left: 0;
 }
 .columns__intro {
   text-align: center;
