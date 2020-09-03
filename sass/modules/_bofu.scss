@@ -58,6 +58,10 @@
     }
   }
 
+  &__btn-block {
+    padding-top: 1.25rem;
+  }
+
   @include mq(desktop-narrow, 'max-width') {
     .row {
       flex-direction: column;
