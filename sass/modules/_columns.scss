@@ -1,11 +1,14 @@
 .columns {
   .col {
     margin-bottom: 3rem;
+    position: relative;
+  }
 
-    img {
-      margin-bottom: 1.5rem;
-    }
+  &__col-image {
+    margin-bottom: 1.5rem;
+  }
 
+  &__col-content {
     h6 {
       font-size: $font-size-h6;
       text-transform: uppercase;
@@ -38,6 +41,29 @@
     }
   }
 
+  &__col-icon {
+    position: absolute;
+    left: 0;
+
+    i {
+      font-size: 2.15rem;
+      color: $icon-color-1;
+      position: relative;
+      top: -.35rem;
+    }
+  }
+
+  &--has-icons {
+    .columns__col-content {
+      margin-left: 3.5rem;
+
+      p:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
   &__intro {
     text-align: center;
     padding-bottom: 1rem;
@@ -60,9 +86,31 @@
     }
   }
 
+  @include mq(desktop-narrow, 'max-width') {
+    .col-1-4 {
+      width: calc(50% - #{$gutter-width});
+    }
+
+    &__col-icon {
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+
   @include mq(ipad, 'max-width') {
     .col-1-6 {
       width: calc(50% - #{$gutter-width});
+    }
+
+    &--has-icons {
+      .col-1-6,
+      .col-1-5,
+      .col-1-4,
+      .col-1-3,
+      .col-1-2 {
+        width: 100%;
+      }
     }
   }
 }
