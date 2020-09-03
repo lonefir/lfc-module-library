@@ -710,8 +710,60 @@ section {
   }
 }
 
+.columns .col {
+  margin-bottom: 3rem;
+}
+.columns .col img {
+  margin-bottom: 1.5rem;
+}
+.columns .col h6 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
+}
+.columns .col p {
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
+}
+.columns .col a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 600;
+}
+.columns .col a:hover {
+  color: #31bf90;
+}
+.columns .col a i {
+  position: relative;
+  top: 1px;
+  color: #31bf90;
+}
 .columns__intro {
   text-align: center;
+  padding-bottom: 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.columns__btn-block {
+  padding-top: 2rem;
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  .columns .col-1-6 {
+    width: calc(33.33% - 1.875rem);
+  }
+  .columns__intro {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 766px) {
+  .columns .col-1-6 {
+    width: calc(50% - 1.875rem);
+  }
 }
 
 .hero {

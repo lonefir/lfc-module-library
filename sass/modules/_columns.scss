@@ -1,5 +1,68 @@
 .columns {
+  .col {
+    margin-bottom: 3rem;
+
+    img {
+      margin-bottom: 1.5rem;
+    }
+
+    h6 {
+      font-size: $font-size-h6;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem;
+    }
+
+    p {
+      font-weight: 300;
+      line-height: 1.7;
+      margin-bottom: 0;
+      padding-bottom: 1.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-color-main;
+      font-weight: 600;
+
+      &:hover {
+        color: $link-color-1;
+      }
+
+      i {
+        position: relative;
+        top: 1px;
+        color: $link-color-1;
+      }
+    }
+  }
+
   &__intro {
     text-align: center;
+    padding-bottom: 1rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__btn-block {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  @include mq(desktop, 'max-width') {
+    .col-1-6 {
+      width: calc(33.33% - #{$gutter-width});
+    }
+
+    &__intro {
+      width: 100%;
+    }
+  }
+
+  @include mq(ipad, 'max-width') {
+    .col-1-6 {
+      width: calc(50% - #{$gutter-width});
+    }
   }
 }
