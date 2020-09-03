@@ -10,6 +10,7 @@
 @import 'layout/grid';
 
 // Components
+@import 'components/accordion';
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/slick-slider';
@@ -18,8 +19,9 @@
 @import 'modules/bofu';
 @import 'modules/cards';
 @import 'modules/columns';
-@import 'modules/hero';
+@import 'modules/faqs';
 @import 'modules/full-width';
+@import 'modules/hero';
 @import 'modules/lead-magnet';
 @import 'modules/left-right-content';
 @import 'modules/left-right-float';

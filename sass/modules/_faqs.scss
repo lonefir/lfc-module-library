@@ -1,0 +1,82 @@
+.faqs {
+  &__row {
+    display: block;
+
+    .col {
+      display: inline-block;
+    }
+
+    .col-1-2 {
+      &:first-child {
+        float: left;
+      }
+
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+
+  &__intro {
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+
+    h4 {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    &:after {
+      margin-top: .5rem;
+      display: block;
+      content: url('../images/divider.png');
+    }
+  }
+
+  @include mq(desktop-narrow, 'max-width') {
+    .col-1-2 {
+      width: 100%;
+    }
+  }
+}
+
+.faq-item {
+  &__question {
+    position: relative;
+    cursor: pointer;
+    padding-left: 2.5rem;
+    transition: opacity .2s ease;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:before {
+      font-family: FontAwesome;
+      content: "\f055";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      display: inline-block;
+    }
+
+    .is-open-accordion & {
+      &:before {
+        content: "\f056";
+      }
+    }
+  }
+
+  &__answer {
+    padding-left: 2.5rem;
+    padding-bottom: .75rem;
+    line-height: 1.8;
+    font-weight: 300;
+
+    p {
+      line-height: 1.8;
+      font-weight: 300;
+    }
+  }
+}

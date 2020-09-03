@@ -1,0 +1,9 @@
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion-container.is-open-accordion .accordion-content {
+  height: auto;
+  animation: fadeIn .3s linear;
+}
