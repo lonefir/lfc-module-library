@@ -1130,8 +1130,16 @@ section {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 899px) {
+  .faqs {
+    padding: 4.5rem 0 5.5rem;
+  }
   .faqs .col-1-2 {
     width: 100%;
+  }
+}
+@media screen and (max-width: 766px) {
+  .faqs {
+    padding: 3rem 0 4rem;
   }
 }
 

@@ -47,9 +47,15 @@
   }
 
   @include mq(desktop-narrow, 'max-width') {
+    padding: 4.5rem 0 5.5rem;
+
     .col-1-2 {
       width: 100%;
     }
+  }
+
+  @include mq(ipad, 'max-width') {
+    padding: 3rem 0 4rem;
   }
 }
 
