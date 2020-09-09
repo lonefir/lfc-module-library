@@ -281,7 +281,7 @@ section {
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3.1rem;
   font-family: soleil, Helvetica, Arial, sans-serif;
   color: #31bf90;
   transition: all 0.2s ease;
@@ -315,6 +315,55 @@ section {
 }
 @media screen and (max-width: 479px) {
   .btn--1 span {
+    padding: 1rem 2.4rem;
+    font-size: 0.7rem;
+  }
+}
+
+.btn--2 {
+  margin-left: 0.625rem;
+}
+.btn--2 span {
+  display: inline-block;
+  border: 1px solid #8c8a8a;
+  background: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.5rem 3.1rem;
+  font-family: soleil, Helvetica, Arial, sans-serif;
+  color: #666;
+  transition: all 0.2s ease;
+}
+.btn--2 span:hover {
+  color: #31bf90;
+}
+.btn--2:before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: #eaeaea;
+  left: -0.625rem;
+  bottom: -0.625rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 766px) {
+  .btn--2 {
+    margin-left: 0.5rem;
+  }
+  .btn--2 span {
+    padding: 1.2rem 3rem;
+    font-size: 0.8rem;
+  }
+  .btn--2:before {
+    left: -0.5rem;
+    bottom: -0.5rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .btn--2 span {
     padding: 1rem 2.4rem;
     font-size: 0.7rem;
   }
@@ -1263,7 +1312,7 @@ section {
   position: absolute;
   left: -3.75rem;
   top: -2.25rem;
-  z-index: 5;
+  z-index: -1;
 }
 .hero__content {
   color: #fff;
@@ -1273,6 +1322,14 @@ section {
 }
 .hero__btn-block {
   padding-top: 1.25rem;
+}
+.hero__btn-block a {
+  margin-right: 1.7rem;
+  margin-bottom: 1.75rem;
+}
+.hero__btn-block a:last-of-type {
+  margin-right: 0;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 899px) {
   .hero {
@@ -1287,6 +1344,9 @@ section {
   .hero .col-1-2,
 .hero .col-2-3 {
     width: 100%;
+  }
+  .hero__media-wrapper {
+    margin-top: 4rem;
   }
   .hero--reversed > .container > .row {
     flex-direction: column-reverse;

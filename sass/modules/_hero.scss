@@ -60,7 +60,7 @@
     position: absolute;
     left: -3.75rem;
     top: -2.25rem;
-    z-index: 5;
+    z-index: -1;
   }
 
   &__content {
@@ -72,6 +72,16 @@
 
   &__btn-block {
     padding-top: 1.25rem;
+    
+    a {
+      margin-right: 1.7rem;
+      margin-bottom: 1.75rem;
+
+      &:last-of-type {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
   }
 
   @include mq(desktop-narrow, 'max-width') {  
@@ -88,6 +98,10 @@
     .col-1-2,
     .col-2-3 {
       width: 100%;
+    }
+
+    &__media-wrapper {
+      margin-top: 4rem;
     }
 
     &--reversed {
