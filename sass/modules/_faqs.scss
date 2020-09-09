@@ -1,7 +1,7 @@
 .faqs {
-  &__row {
-    display: block;
+  padding: 6rem 0;
 
+  &__row {
     .col {
       display: inline-block;
     }
@@ -32,6 +32,12 @@
       display: block;
       content: url('../images/divider.png');
     }
+  }
+
+  &--has-background-image {
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
   }
 
   @include mq(desktop-narrow, 'max-width') {

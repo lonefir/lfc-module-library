@@ -1041,8 +1041,8 @@ section {
   }
 }
 
-.faqs__row {
-  display: block;
+.faqs {
+  padding: 6rem 0;
 }
 .faqs__row .col {
   display: inline-block;
@@ -1066,6 +1066,11 @@ section {
   margin-top: 0.5rem;
   display: block;
   content: url("../images/divider.png");
+}
+.faqs--has-background-image {
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 899px) {
   .faqs .col-1-2 {
