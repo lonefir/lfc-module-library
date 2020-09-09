@@ -46,6 +46,12 @@
       bottom: 0;
       background: $overlay-1;
     }
+
+    &.bofu--has-dark-overlay-alt {
+      &:after {
+        background: $overlay-2;
+      }
+    }
   }
 
   &__intro {

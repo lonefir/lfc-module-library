@@ -404,7 +404,7 @@ section {
 .form__row--justify-content-center {
   justify-content: center;
 }
-.form input[type=submit] {
+.form button[type=submit] {
   position: relative;
   z-index: 2;
   cursor: pointer;
@@ -419,7 +419,7 @@ section {
   color: #31bf90;
   transition: all 0.2s ease;
 }
-.form input[type=submit]:hover {
+.form button[type=submit]:hover {
   color: #666;
 }
 .form__submit-wrapper {
@@ -748,6 +748,9 @@ section {
   top: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.85);
+}
+.bofu--has-dark-overlay.bofu--has-dark-overlay-alt:after {
+  background: rgba(0, 0, 0, 0.7);
 }
 .bofu__intro {
   padding-bottom: 1rem;
