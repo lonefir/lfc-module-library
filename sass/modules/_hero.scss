@@ -48,6 +48,19 @@
   &__media {
     display: flex;
     justify-content: center;
+    position: relative;
+  }
+
+  &__media-wrapper {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__media-accent {
+    position: absolute;
+    left: -3.75rem;
+    top: -2.25rem;
+    z-index: 5;
   }
 
   &__content {
