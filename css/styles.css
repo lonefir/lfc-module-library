@@ -1067,6 +1067,11 @@ section {
   display: block;
   content: url("../images/divider.png");
 }
+.faqs__btn-block {
+  padding-top: 3rem;
+  justify-content: center;
+  display: flex;
+}
 .faqs--has-background-image {
   background-size: cover;
   width: 100%;
