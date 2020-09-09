@@ -51,21 +51,29 @@ p {
   margin: 0;
 }
 
-p {
+p,
+ul,
+ol {
   padding-bottom: 1.5rem;
 }
 @media screen and (max-width: 899px) {
-  p {
+  p,
+ul,
+ol {
     font-size: calc(.95 * 1rem);
   }
 }
 @media screen and (max-width: 766px) {
-  p {
+  p,
+ul,
+ol {
     font-size: calc(.9 * 1rem);
   }
 }
 @media screen and (max-width: 639px) {
-  p {
+  p,
+ul,
+ol {
     font-size: calc(.875 * 1rem);
   }
 }
@@ -1724,6 +1732,49 @@ section {
 }
 .lr-form__list-item-heading {
   margin-bottom: 0.25rem;
+}
+.lr-form__form-wrapper {
+  background: #f6f6f6;
+  padding: 1.5rem 1.25rem 1.75rem;
+}
+.lr-form__form-header, .lr-form__form-intro {
+  text-align: center;
+}
+.lr-form__form-header {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.lr-form__form-header h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.lr-form__form-header:after {
+  padding: 0.15rem 0;
+  display: inline-block;
+  content: url("../images/divider-white-small.png");
+}
+.lr-form__form-intro {
+  line-height: 1.7;
+  font-weight: 300;
+}
+.lr-form__form {
+  padding: 1.75rem 1rem;
+}
+.lr-form__form .form__field input:not([type=checkbox]),
+.lr-form__form .form__field input:not([type=radio]),
+.lr-form__form .form__field textarea {
+  border: 1px solid #ddd;
+}
+.lr-form__form .form__submit-wrapper {
+  margin-top: 0.25rem;
+}
+.lr-form__form .form__row:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 766px) {
+  .lr-form__list li {
+    padding-left: 1.5rem;
+  }
 }
 
 .logo-bar .slick-dots {

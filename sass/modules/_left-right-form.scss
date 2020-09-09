@@ -34,4 +34,67 @@
   &__list-item-heading {
     margin-bottom: .25rem;
   }
+
+  &__form-wrapper {
+    background: $background-color-3;
+    padding: 1.5rem 1.25rem 1.75rem;
+  }
+
+  &__form-header,
+  &__form-intro {
+    text-align: center;
+  }
+
+  &__form-header {
+    position: relative;
+    margin-bottom: .5rem;
+
+    h3 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    &:after {
+      padding: .15rem 0;
+      display: inline-block;
+      content: url('../images/divider-white-small.png');
+    }
+  }
+
+  &__form-intro {
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  &__form {
+    padding: 1.75rem 1rem;
+
+    .form {
+      &__field {
+        input:not([type='checkbox']),
+        input:not([type='radio']),
+        textarea {
+          border: 1px solid $border-color-3;
+        }
+      }
+
+      &__submit-wrapper {
+        margin-top: .25rem;
+      }
+
+      &__row {
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @include mq(ipad, 'max-width') {
+    &__list {
+      li {
+        padding-left: 1.5rem;
+      }
+    }
+  }
 }
