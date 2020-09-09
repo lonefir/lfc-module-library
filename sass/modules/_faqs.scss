@@ -90,4 +90,10 @@
       font-weight: 300;
     }
   }
+
+  @include mq(ipad, 'max-width') {
+    &__question {
+      padding-left: 1.75rem;
+    }
+  }
 }

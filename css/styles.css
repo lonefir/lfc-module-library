@@ -1164,6 +1164,11 @@ section {
   line-height: 1.8;
   font-weight: 300;
 }
+@media screen and (max-width: 766px) {
+  .faq-item__question {
+    padding-left: 1.75rem;
+  }
+}
 
 .full-width {
   padding: 4rem 0 7rem;
