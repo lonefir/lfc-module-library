@@ -1476,6 +1476,10 @@ section {
   justify-content: center;
   flex-direction: column;
   align-items: center; }
+.logo-bar__btn-block {
+  padding-top: 3rem;
+  justify-content: center;
+  display: flex; }
 @media screen and (max-width: 899px) {
   .logo-bar__prev-arrow {
     left: -1.5rem; }
