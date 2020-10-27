@@ -1028,6 +1028,12 @@ section {
     top: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.85); }
+  .hero--has-video-background {
+    position: relative; }
+    .hero--has-video-background video {
+      object-fit: cover; }
+    .hero--has-video-background video::-webkit-media-controls {
+      display: none !important; }
   .hero--centered {
     text-align: center; }
     .hero--centered > .container > .row {
@@ -1055,7 +1061,7 @@ section {
     justify-content: center;
     flex-direction: column; }
   .hero__btn-block {
-    padding-top: 1.25rem; }
+    padding-top: 1.75rem; }
     .hero__btn-block a {
       margin-right: 1.7rem;
       margin-bottom: 1.75rem; }
@@ -1080,6 +1086,9 @@ section {
           margin-bottom: 0; }
       .hero--centered .row > .col {
         margin-bottom: 0; } }
+  @media screen and (max-width: 479px) {
+    .hero__btn-block a {
+      margin-right: 0; } }
 
 .lead-magnet {
   background-size: cover;

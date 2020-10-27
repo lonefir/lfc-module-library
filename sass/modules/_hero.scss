@@ -26,6 +26,18 @@
     }
   }
 
+  &--has-video-background {
+    position: relative;
+
+    video {
+      object-fit: cover;
+    }
+
+    video::-webkit-media-controls {
+      display:none !important;
+    }
+  }
+
   &--centered {
     text-align: center;
 
@@ -71,7 +83,7 @@
   }
 
   &__btn-block {
-    padding-top: 1.25rem;
+    padding-top: 1.75rem;
     
     a {
       margin-right: 1.7rem;
@@ -121,6 +133,14 @@
         > .col {
           margin-bottom: 0;
         }
+      }
+    }
+  }
+
+  @include mq(mobile-landscape, 'max-width') {
+    &__btn-block {
+      a {
+        margin-right: 0;
       }
     }
   }
