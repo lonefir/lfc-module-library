@@ -1,0 +1,144 @@
+.people-bio {
+  &__intro {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  @include mq(desktop-narrow, 'max-width') {
+    &__intro {
+      width: 100%;
+    }
+  }
+}
+
+.people-bio-block {
+  margin-bottom: 6.5rem;
+
+  &__intro {
+    padding-bottom: 1.25rem;
+
+    &:after {
+      display: block;
+      content: url('../images/divider.png');
+    }
+  }
+
+  &__heading {
+    padding-bottom: .35rem;
+  }
+
+  &__subheading {
+    padding-bottom: .6rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    color: $text-color-main;
+    line-height: 1.9;
+
+    p {
+      line-height: 1.9;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+    p,
+    ul,
+    ol {
+      font-weight: 300;
+      color: $text-color-main;
+    }
+  }  
+
+  &__image {
+    position: relative;
+
+    > img {
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  &__image-accent {
+    position: absolute;
+    z-index: 5;
+    top: -10px;
+    left: 0;
+    right: 0;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &--image-left {
+    .people-bio-block__row {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__social-list {
+    margin-top: 1.3rem;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 1.05rem;
+      list-style-type: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      color: $text-color-main;
+      font-size: 2rem;
+      transition: all .2s ease;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  @include mq(desktop-narrow, 'max-width') {
+    &__row {
+      > .col {
+        &:first-of-type {
+          margin-bottom: 4rem;
+        }
+      }
+
+      .col-1-2 {
+        width: 100%;
+      }
+    }
+  }
+
+  @include mq(tablet, 'max-width') {
+    &__social-list {
+      li {
+        margin: 0 1rem;
+      }
+
+      a {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
