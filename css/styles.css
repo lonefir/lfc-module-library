@@ -1545,7 +1545,8 @@ section {
     .people-bio-block__image > img {
       margin: 0 auto;
       position: relative;
-      z-index: 10; }
+      z-index: 10;
+      border-radius: 50%; }
   .people-bio-block__image-accent {
     position: absolute;
     z-index: 5;
