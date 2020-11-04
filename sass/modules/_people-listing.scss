@@ -1,0 +1,156 @@
+.people-listing {
+  .col {
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  &__col-image {
+    position: relative;
+    left: .4rem;
+
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: $gradient-1;
+      left: -.4rem;
+      bottom: -.4rem;
+      cursor: pointer;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      box-shadow: 10px 0 20px rgba(0, 0, 0, .1);
+    }
+  }
+
+  .col-1-6,
+  .col-1-5 {
+    .cards__col-image{
+      left: .4rem;
+
+      &:before {
+        left: -.4rem;
+        bottom: -.4rem;
+      }
+    }
+  }
+
+  .col-1-4,
+  .col-1-3,
+  .col-1-2,
+  .col-full-width {
+    .cards__col-image{
+      left: .65rem;
+
+      &:before {
+        left: -.65rem;
+        bottom: -.65rem;
+      }
+    }
+  }
+
+  &__col-content {
+    padding: 1.5rem;
+
+    h6 {
+      font-size: $font-size-h6;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0;
+      padding-bottom: .25rem;
+    }
+
+    p {
+      font-weight: 300;
+      line-height: 1.7;
+      margin-bottom: 0;
+      padding-bottom: .75rem;
+      position: relative;
+
+      &:after {
+        margin-top: .25rem;
+        display: block;
+        content: url('../images/divider-small.png');
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-color-main;
+      font-weight: 600;
+
+      &:hover {
+        color: $link-color-1;
+      }
+
+      i {
+        position: relative;
+        top: 1px;
+        color: $link-color-1;
+      }
+    }
+  }
+
+  &__intro {
+    text-align: center;
+    padding-bottom: 1rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__btn-block {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  @include mq(desktop, 'max-width') {
+    .col-1-6 {
+      width: calc(33.33% - #{$gutter-width});
+    }
+
+    .col-1-4 {
+      width: calc(50% - #{$gutter-width});
+    }
+
+    &__intro {
+      width: 100%;
+    }
+
+    .col-1-6,
+    .col-1-5,
+    .col-1-4,
+    .col-1-3,
+    .col-1-2,
+    .col-full-width {
+      .columns__col-image{
+        left: .4rem;
+
+        &:before {
+          left: -.4rem;
+          bottom: -.4rem;
+        }
+      }
+    }
+  }
+
+  @include mq(ipad, 'max-width') {
+    .col-1-6 {
+      width: calc(50% - #{$gutter-width});
+    }
+  }
+
+  @include mq(tablet, 'max-width') {
+    .col-1-6,
+    .col-1-5,
+    .col-1-4,
+    .col-1-3,
+    .col-1-2 {
+      width: 100%;
+    }
+  }
+}
