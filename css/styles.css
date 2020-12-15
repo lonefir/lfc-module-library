@@ -527,6 +527,8 @@ section {
     margin: 0 5px;
     padding: 0;
     cursor: pointer; }
+    .slick-dots li:only-child {
+      display: none; }
     .slick-dots li button {
       border: 0;
       background: transparent;

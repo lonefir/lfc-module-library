@@ -252,6 +252,9 @@ $slick-opacity-not-active: 0.25 !default;
         margin: 0 5px;
         padding: 0;
         cursor: pointer;
+        &:only-child {
+          display: none;
+        }
         button {
             border: 0;
             background: transparent;
