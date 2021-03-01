@@ -181,25 +181,27 @@
       }
     }
 
-    &__image {
-      position: relative;
-
-      &:before {
-        height: 100%;
-        width: 100%;
-        margin-top: 1rem;
-        margin-left: 1rem;
-        left: auto;
-        right: auto;
-      }
-
-      img {
-        max-height: 26rem;
-        height: auto;
-        width: 100%;
+    .col-1-2 {
+      .lr-float-block__image {
         position: relative;
-        right: auto;
-        left: auto;
+
+        &:before {
+          height: 100%;
+          width: 100%;
+          margin-top: 1rem;
+          margin-left: 1rem;
+          left: auto;
+          right: auto;
+        }
+
+        img {
+          max-height: 26rem;
+          height: auto;
+          width: 100%;
+          position: relative;
+          right: auto;
+          left: auto;
+        }
       }
     }
 
@@ -223,6 +225,16 @@
           position: relative;
           right: auto;
           left: auto;
+        }
+      }
+    }
+  }
+
+  @include mq(tablet, 'max-width') {
+    .col-1-2 {
+      .lr-float-block__image {
+        img {
+          max-height: 18rem;
         }
       }
     }
