@@ -1,0 +1,191 @@
+.lr-overlap {
+  &__intro {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  @include mq(desktop-narrow, 'max-width') {
+    &__intro {
+      width: 100%;
+    }
+  }
+}
+
+.lr-overlap-col {
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 15;
+    height: 380px;
+    margin-top: 30px;
+    background: $background-white;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    box-shadow: 10px 3px 20px rgba(black, .15);
+  }
+}
+
+.lr-overlap-block--image-left {
+  .lr-overlap-col {
+    &__image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 5;
+    }
+
+    &__text {
+      position: relative;
+      z-index: 15;
+    }
+  }
+}
+
+.lr-overlap-block {
+  margin-bottom: 5rem;
+
+  &__row {
+    position: relative;
+    min-height: 480px;
+  }
+
+  &__intro {
+    padding-bottom: 1.25rem;
+
+    &:after {
+      display: block;
+      content: url('../images/divider.png');
+    }
+  }
+
+  &__heading {
+    padding-bottom: .35rem;
+  }
+
+  &__subheading {
+    padding-bottom: .6rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    color: $text-color-main;
+    line-height: 1.9;
+
+    p {
+      line-height: 1.9;
+      padding-bottom: 1rem;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+    p,
+    ul,
+    ol {
+      font-weight: 300;
+      color: $text-color-main;
+    }
+  }  
+
+  &__btn-block {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 445px;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: $gradient-1;
+      right: -1rem;
+      bottom: -1rem;
+      cursor: pointer;
+      box-shadow: 10px 0 20px rgba(0, 0, 0, .1);
+    }
+  }
+
+  &--image-left {
+    .lr-overlap-block__row {
+      flex-direction: row-reverse;
+    }
+
+    .lr-overlap-block__image {
+      &:before {
+        position: absolute;
+        content: '';
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: $gradient-1;
+        left: -1rem;
+        bottom: -1rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @include mq(large, 'max-width') {
+    .lr-overlap-col {
+      &__image {
+        position: relative;
+      }
+
+      &__text {
+        height: auto;
+      }
+    }
+
+    &__row {
+      > .col {
+        &:first-of-type {
+          margin-bottom: 4rem;
+        }
+      }
+
+      .col-7-12 {
+        width: 100%;
+      }
+    }
+
+    &__image {
+      img {
+        max-height: 445px;
+      }
+    }
+  }
+
+  @include mq(desktop, 'max-width') {
+    &__image {
+      img {
+        height: 360px;
+      }
+    }
+  }
+
+  @include mq(full-nav, 'max-width') {
+    &__image {
+      img {
+        height: 300px;
+      }
+    }
+  }
+}

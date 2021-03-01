@@ -46,6 +46,18 @@ $(document).ready(function(){
   });
 });
 
+// Testimonial Slider
+$(document).ready(function(){
+  $('.testimonials__slider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<i class="logo-bar__prev-arrow fas fa-caret-left"></i>',
+    nextArrow: '<i class="logo-bar__next-arrow fas fa-caret-right"></i>',
+  });
+});
+
 // Left Right Float Module Widths
 // function threeQuarterFloatSizing() {
 //   var siteContainerWidth = document.querySelector('.lr-float .container').offsetWidth;
